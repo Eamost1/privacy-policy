@@ -14,6 +14,7 @@
     .btn-insta { background: linear-gradient(135deg, #e1306c, #c13584); }
     .legal { text-align: left; font-size: 0.88rem; color: #cbd5e1; }
     .legal h2 { font-size: 1.1rem; color: #60a5fa; margin-top: 0; }
+    .field { width: 100%; padding: 10px; margin: 6px 0; border-radius: 8px; border: 1px solid #334155; background: #0f172a; color: #fff; box-sizing: border-box; }
   </style>
 </head>
 <body>
@@ -32,16 +33,32 @@
     54673 Neuerburg<br>
     Deutschland</p>
     <p><strong>Kontakt:</strong><br>
-    E-Mail: doggydash.support@gmail.com</p>
+    E-Mail: doggydash.support@gmail.com<br>
+    E-Mail: roccosreef.support@gmail.com</p>
     <p><strong>Umsatzsteuer-Hinweis:</strong><br>
     Kleinunternehmer gemäß § 19 UStG (keine Ausweisung der Umsatzsteuer).</p>
     <p><strong>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV:</strong><br>
     Steven Eric De Bruycker, Anschrift wie oben.</p>
   </div>
-    <script>
+  <div class="card legal">
+    <h2>Kontaktformular (Schnellkontakt)</h2>
+    <form id="contact-form" method="POST">
+      <input class="field" type="text" name="name" placeholder="Dein Name" required>
+      <input class="field" type="email" name="email" placeholder="Deine E-Mail-Adresse" required>
+      <select class="field" name="app">
+        <option value="Allgemein">Betreff: Allgemein / Website</option>
+        <option value="Doggy Dash">App: Doggy Dash</option>
+        <option value="Roccos Reef">App: Rocco's Reef</option>
+      </select>
+      <textarea class="field" name="message" rows="3" placeholder="Deine Nachricht..." required></textarea>
+      <button type="submit" class="btn" style="width:100%;border:none;font-size:1rem;">Nachricht senden</button>
+    </form>
+  </div>
+  <script>
     var p = "https:" + "//";
     document.getElementById("doggy-link").href = p + "athletic-doggy-dash-run" + ".base44.app/privacy";
     document.getElementById("insta-link").href = p + "www.instagram" + ".com/steveneric8939";
+    document.getElementById("contact-form").action = p + "formspree" + ".io/f/mrpqkanl";
   </script>
 </body>
 </html>
