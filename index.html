@@ -40,12 +40,9 @@
     Steven Eric De Bruycker, Anschrift wie oben.</p>
   </div>
   <script>
-    window.addEventListener("DOMContentLoaded", function() {
-      var u1 = ["https:/", "athletic-doggy-dash-run.base44.app", "privacy"].join("/");
-      var u2 = ["https:/", "://instagram.com", "steveneric8939"].join("/");
-      document.getElementById("doggy-link").setAttribute("href", u1);
-      document.getElementById("insta-link").setAttribute("href", u2);
-    });
+    var p = window.location.protocol + "//";
+    document.getElementById("doggy-link").href = p + "athletic-doggy-dash-run.base44.app/privacy";
+    document.getElementById("insta-link").href = p + "://instagram.com";
   </script>
 </body>
 </html>
