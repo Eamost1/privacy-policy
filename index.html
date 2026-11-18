@@ -9,7 +9,7 @@
     .card { background: #1e293b; border: 1px solid #334155; padding: 26px 20px; border-radius: 16px; box-shadow: 0 8px 20px rgba(0,0,0,0.3); margin-bottom: 20px; }
     h1 { color: #ffffff; font-size: 1.5rem; margin-bottom: 6px; }
     .subtitle { color: #94a3b8; font-size: 0.95rem; margin-bottom: 24px; }
-    .btn { display: block; background: linear-gradient(135deg, #3b82f6, #2563eb); color: #fff; text-decoration: none; padding: 15px 18px; border-radius: 12px; font-weight: 600; margin: 12px 0; }
+    .btn { display: block; background: linear-gradient(135deg, #3b82f6, #2563eb); color: #fff; text-decoration: none; padding: 15px 18px; border-radius: 12px; font-weight: 600; margin: 12px 0; cursor: pointer; }
     .btn-reef { background: linear-gradient(135deg, #0d9488, #0f766e); }
     .legal { text-align: left; font-size: 0.88rem; color: #cbd5e1; }
     .legal h2 { font-size: 1.1rem; color: #60a5fa; margin-top: 0; }
@@ -19,8 +19,8 @@
   <div class="card">
     <h1>Steven Eric De Bruycker</h1>
     <p class="subtitle">🎮 Indie Mobile Game Developer<br>Building fun mobile games from scratch ✨</p>
-    <a class="btn" href="https://base44.app">🐶 Doggy Dash – Info & Datenschutz</a>
-    <a class="btn btn-reef" href="https://github.io">🏝️ Rocco’s Reef – Info & Datenschutz</a>
+    <a class="btn" id="doggy-link" href="#">🐶 Doggy Dash – Info & Datenschutz</a>
+    <a class="btn btn-reef" href="roccos-reef.html">🏝️ Rocco’s Reef – Info & Datenschutz</a>
   </div>
   <div class="card legal">
     <h2>Impressum (Angaben gemäß § 5 DDG)</h2>
@@ -37,5 +37,8 @@
     <p><strong>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV:</strong><br>
     Steven Eric De Bruycker, Anschrift wie oben.</p>
   </div>
+  <script>
+    document.getElementById("doggy-link").href = "https://" + "athletic-doggy-dash-run" + ".base44.app/privacy";
+  </script>
 </body>
 </html>
