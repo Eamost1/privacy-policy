@@ -20,9 +20,9 @@
   <div class="card">
     <h1>Steven Eric De Bruycker</h1>
     <p class="subtitle">🎮 Indie Mobile Game Developer<br>Building fun mobile games from scratch ✨</p>
-    <a class="btn" id="doggy-link" href="#">🐶 Doggy Dash – Info & Datenschutz</a>
+    <a class="btn" id="doggy-link">🐶 Doggy Dash – Info & Datenschutz</a>
     <a class="btn btn-reef" href="roccos-reef.html">🏝️ Rocco’s Reef – Info & Datenschutz</a>
-    <a class="btn btn-insta" id="insta-link" href="#">📸 Instagram (@steveneric8939)</a>
+    <a class="btn btn-insta" id="insta-link">📸 Instagram (@steveneric8939)</a>
   </div>
   <div class="card legal">
     <h2>Impressum (Angaben gemäß § 5 DDG)</h2>
@@ -40,8 +40,12 @@
     Steven Eric De Bruycker, Anschrift wie oben.</p>
   </div>
   <script>
-    document.getElementById("doggy-link").href = "https://" + "athletic-doggy-dash-run" + ".base44.app/privacy";
-    document.getElementById("insta-link").href = "https://" + "://instagram.com" + "steveneric8939";
+    window.addEventListener("DOMContentLoaded", function() {
+      var u1 = ["https:/", "athletic-doggy-dash-run.base44.app", "privacy"].join("/");
+      var u2 = ["https:/", "://instagram.com", "steveneric8939"].join("/");
+      document.getElementById("doggy-link").setAttribute("href", u1);
+      document.getElementById("insta-link").setAttribute("href", u2);
+    });
   </script>
 </body>
 </html>
